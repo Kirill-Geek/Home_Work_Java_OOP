@@ -1,6 +1,6 @@
 package Lesson_5;
 
 public abstract class CalcModel implements Model{
-    int x,y;
+    double x,y;
     char act;
 }

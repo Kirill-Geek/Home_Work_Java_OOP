@@ -1,12 +1,12 @@
 package Lesson_5;
 
 public class ResModel extends CalcModel{
-    int res;
+    double res;
     public ResModel(){
 
     }
     @Override
-    public int result(char Act){
+    public double result(char Act){
         super.act = Act;
         if (act == '+'){
             res = x + y;
@@ -30,12 +30,12 @@ public class ResModel extends CalcModel{
         }
 
     @Override
-    public void setX(int val) {
+    public void setX(double val) {
         super.x = val;
     }
 
     @Override
-    public void setY(int val) {
+    public void setY(double val) {
         super.y = val;
     }
 

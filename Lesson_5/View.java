@@ -6,10 +6,11 @@ public class View{
 
     Scanner iScan = new Scanner(System.in);
 
-    public int getValue() {
+    public double getValue() {  
         System.out.println("Введите число");
-        return iScan.nextInt();
+        return iScan.nextDouble();
     }
+
     public char getAct(){
         System.out.println("Выберите одно из действий '+', '-', '*', '/'");
         return iScan.next().charAt(0);

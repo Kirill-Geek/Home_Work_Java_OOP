@@ -8,11 +8,12 @@ public class Presenter {
         view = v;
     }
     public void buttonClic(){
-        int x = view.getValue();
-        int y = view.getValue();
-        char act = view.getAct();
-        model.setX(x);
-        model.setY(y);
-        System.out.println(model.result(act));
+        //int x = view.getValue();
+        //int y = view.getValue();
+        //char act = view.getAct();
+        model.setX(view.getValue());
+        model.setY(view.getValue());
+        double result = model.result(view.getAct());
+        System.out.println(result);
     }
 }
